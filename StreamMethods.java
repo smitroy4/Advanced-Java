@@ -9,7 +9,8 @@ static List<String> stringList = Arrays.asList("Golu", "Molu", "Bholu");
 
     static void main(String[] args) {
 
-//        stringList.stream().filter();
+        List<String> filteredList = stringList.stream().filter(x->x.contains("G")).toList();
+        System.out.println(filteredList);
 
 
     }
